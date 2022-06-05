@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Paz-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This page exhabites a shop of Game Of Thrones items. it includes clothing items and also items for the office and for home.">
+		<meta name="keywords" content="game of thrones, store, clothing items, Home & Office items">
+		<meta name="author" content="Paz Gueta">
+		<link rel="stylesheet" href="style.css">
+		<!-- the line below is a style for the social media and the add to cart section -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>HBO Shop &#128081; &#128009;</title>
+	</head>
+	<body>
+		<header>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Logo_Game_of_Thrones.png"
+				title="Game of Thrones Logo" alt="GoT Logo" width=640 height=150>
+		</header>
+		<hr>
+		<main>
+			<!--The section below is for the smooth scroling from the back of the page-->
+			<section id="heading">
+			  <h1><b><em>The Original Shop</em></b></h1>
+		    </section>
+			<!--this is a link from the top of the page to the end-->
+			<a href="#coupon">Click Me to see the coupons</a> 
+			<br>
+			<table>
+				<caption>Clothing Items:</caption>
+				<thead>
+					<tr>
+						<td>Item:</td>
+						<td>Price:</td>
+						<td>Choose a Size:</td>
+						<td>Choose a Color</td>
+						<td>Add to cart:</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<img src="images/black_shirt.png" class="shop_item_img" id="tshirt_color" title="Tshirt"
+								alt="Tshirt">
+						</td>
+						<td>19.95$</td>
+						<td>
+							<select>
+								<!-- look at the select refernces in the css stylesheet-->
+								<option>Small</option>
+								<option>Medium</option>
+								<option>Large</option>
+								<option>XL</option>
+								<option>XLL</option>
+							</select>
+						</td>
+						<td class="radio-toolbar">
+							<!-- look at the radio-toolbar in the css styleshit-->
+							<!-- the first elemnnt in each input will get checked as attribute-->
+							<input type="radio" id="radioBlackShirt" name="radioColorShirt" value="black" checked>
+							<label for="radioBlackShirt">Black</label>
+							<input type="radio" id="radioGrayShirt" name="radioColorShirt" value="Gray">
+							<label for="radioGrayShirt">Gray</label>
+						</td>
+						<td>
+							<label for="quantity1">Add:</label>
+							<input type="number" id="quantity1" name="quantity" min="0" max="5">
+							<!--Look at the add to cart class in the css stylesheet-->
+							<button class="add_to_cart_button"><i class="fa fa-cart-plus"></i></button>
+							<!--There is also link on the top of the page for -->
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/black_summer_hat.png" class="shop_item_img" id="summer_hat_color" title="hat"
+								alt="hat">
+						</td>
+						<td>29.95$</td>
+						<td>
+							<select>
+								<option>Small</option>
+								<option>Medium</option>
+								<option>Large</option>
+								<option>XL</option>
+								<option>XLL</option>
+							</select>
+						</td>
+						<td class="radio-toolbar">
+							<input type="radio" id="radioRedHatSummer" name="radioColorHatSummer" value="Red" checked>
+							<label for="radioRedHatSummer">Red</label>
+							<input type="radio" id="radioBlackHatSummer" name="radioColorHatSummer" value="Black">
+							<label for="radioBlackHatSummer">Black</label>
+						</td>
+						<td>
+							<label for="quantity5">Add:</label>
+							<input type="number" id="quantity5" name="quantity" min="0" max="5">
+							<button class="add_to_cart_button"><i class="fa fa-cart-plus"></i></button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/black_jacket.png" class="shop_item_img" id="jacket_color" title="fleezeHooded"
+								alt="fleezeHooded">
+						</td>
+						<td>41.95$</td>
+						<td>
+							<select>
+								<option>Small</option>
+								<option>Medium</option>
+								<option>Large</option>
+								<option>XL</option>
+								<option>XLL</option>
+							</select>
+						</td>
+						<td class="radio-toolbar">
+							<input type="radio" id="radioWhiteJacket" name="radioColorJacket" value="White" checked>
+							<label for="radioWhiteJacket">White</label>
+							<input type="radio" id="radioBlackJacket" name="radioColorJacket" value="Black">
+							<label for="radioBlackJacket">Black</label>
+						</td>
+						<td>
+							<label for="quantity4">Add:</label>
+							<input type="number" id="quantity4" name="quantity" min="0" max="5">
+							<button class="add_to_cart_button"><i class="fa fa-cart-plus"></i></button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/blue_winter_hat.png" class="shop_item_img" id="winter_hat_color"
+								title="winter hat" alt="winter hat">
+						</td>
+						<td>21.95$</td>
+						<td>
+							<select>
+								<option>Small</option>
+								<option>Medium</option>
+								<option>Large</option>
+								<option>XL</option>
+								<option>XLL</option>
+							</select>
+						</td>
+						<td class="radio-toolbar">
+							<input type="radio" id="radioBlueWinterHat" name="radioColorWinterHat" value="blue" checked>
+							<label for="radioBlueWinterHat">Blue</label>
+							<input type="radio" id="radioRedWinterHat" name="radioColorWinterHat" value="red">
+							<label for="radioRedWinterHat">Red</label>
+						</td>
+						<td>
+							<label for="quantity7">Add:</label>
+							<input type="number" id="quantity7" name="quantity" min="0" max="5">
+							<button class="add_to_cart_button"><i class="fa fa-cart-plus"></i></button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/Sweater.png" class="shop_item_img" title="sweather" alt="sweather">
+						</td>
+						<td>64.95$</td>
+						<td>
+							<select>
+								<option>Small</option>
+								<option>Medium</option>
+								<option>Large</option>
+								<option>XL</option>
+								<option>XLL</option>
+							</select>
+						</td>
+						<td>
+							One Color way
+						</td>
+						<td>
+							<label for="quantity2">Add:</label>
+							<input type="number" id="quantity2" name="quantity" min="0" max="5">
+							<button class="add_to_cart_button"><i class="fa fa-cart-plus"></i></button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/long_shirt.png" class="shop_item_img" title="sleeverTshirt"
+								alt="sleeverTshirt">
+						</td>
+						<td>25.95$</td>
+						<td>
+							<select>
+								<option>Small</option>
+								<option>Medium</option>
+								<option>Large</option>
+								<option>XL</option>
+								<option>XLL</option>
+							</select>
+						</td>
+						<td>
+							One Color way
+						</td>
+						<td>
+							<label for="quantity3">Add:</label>
+							<input type="number" id="quantity3" name="quantity" min="0" max="5">
+							<button class="add_to_cart_button"><i class="fa fa-cart-plus"></i></button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/scarf.png" class="shop_item_img" title="scarf" alt="scarf">
+						</td>
+						<td>16.95$</td>
+						<td>
+							<select>
+								<option>Small</option>
+								<option>Medium</option>
+								<option>Large</option>
+								<option>XL</option>
+								<option>XLL</option>
+							</select>
+						</td>
+						<td>
+							One Color way
+						</td>
+						<td>
+							<label for="quantity6">Add:</label>
+							<input type="number" id="quantity6" name="quantity" min="0" max="5">
+							<button class="add_to_cart_button"><i class="fa fa-cart-plus"></i></button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<br>
+			<table>
+				<caption>Home & Office:</caption>
+				<thead>
+					<tr>
+						<td>Item:</td>
+						<td>Price:</td>
+						<td>Add to cart:</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<!--look at the class flip box in the css. it will represent the flipping of the picture when you are hover-->
+						<td class="flip-box">
+							<!-- I used dives because I had to put the flip flop elemnt inside some tags that will gather it. -->
+							<div class="flip-box-inner">
+								<div class="flip-box-front">
+									<img src="images/DragonEgg.png" class="shop_item_img" title="dargonEgg" alt="dargonEgg">
+								</div>
+								<div class="flip-box-back">
+									<h2>Dargon egg</h2>
+									<p>This Game Of Thrones Rhaegal Egg is a unique addition to any fans growing
+										Game of
+										Thrones Collection. An authentic prop replica of the Rhaegal egg, this piece
+										makes a stunning addition to your desk, bookshelf, or space of your
+										choosing.
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>59.95$</td>
+						<td>
+							<label for="quantity8">Add:</label>
+							<input type="number" id="quantity8" name="quantity" min="0" max="5">
+							<button class="add_to_cart_button"><i class="fa fa-cart-plus"></i></button>
+						</td>
+					</tr>
+					<tr>
+						<td class="flip-box">
+							<div class="flip-box-inner">
+								<div class="flip-box-front">
+									<img src="https://cdn.shopify.com/s/files/1/0533/5030/1859/products/gotcsfrmstk_33d5380a-1348-4575-ab8b-ff867786da60_1800x1800.jpg?v=1618607162"
+										class="shop_item_img" title="framedPic" alt="framedPic">
+								</div>
+								<div class="flip-box-back">
+									<h2>Ned Stark Framed Print</h2>
+									<p>Dreams can come true with this Ned Stark Iron Throne framed print from Game
+										of
+										Thrones.</p>
+								</div>
+							</div>
+						</td>
+						<td>103.95$</td>
+						<td>
+							<label for="quantity9">Add:</label>
+							<input type="number" id="quantity9" name="quantity" min="0" max="5">
+							<button class="add_to_cart_button"><i class="fa fa-cart-plus"></i></button>
+						</td>
+					</tr>
+					<tr>
+						<td class="flip-box">
+							<div class="flip-box-inner">
+								<div class="flip-box-front">
+									<img src="https://cdn.shopify.com/s/files/1/0533/5030/1859/products/gothoicannk_20442334-2f57-483b-bce8-857484516004_1800x1800.jpg?v=1618158782"
+										class="shop_item_img" title="candle" alt="candle">
+								</div>
+								<div class="flip-box-back">
+									<h2>Game of Thrones Night King Candle</h2>
+									<p>Now you can keep the dark at bay even when Winter is Coming with this HBO
+										shop
+										exclusive Night King candle from Game of Thrones. This extraordinarily
+										detailed
+										candle is unscented, and s
+								</div>
+							</div>
+						</td>
+						<td>9.95$</td>
+						<td>
+							<label for="quantity10">Add:</label>
+							<input type="number" id="quantity10" name="quantity" min="0" max="5">
+							<button class="add_to_cart_button"><i class="fa fa-cart-plus"></i></button>
+						</td>
+					</tr>
+					<tr>
+						<td class="flip-box">
+							<div class="flip-box-inner">
+								<div class="flip-box-front">
+									<img src="https://cdn.shopify.com/s/files/1/0533/5030/1859/products/gotmemtlirn_7579535c-446f-4cb2-a6b7-2c55d4c6de7d_1800x1800.jpg?v=1617983112"
+										class="shop_item_img" title="ironThrone" alt="ironThrone">
+								</div>
+								<div class="flip-box-back">
+									<h2>Game of Thrones Iron Throne Metal Model</h2>
+									<p>Build your own Iron Throne and decorate your home, dorm, or office with this
+										Iron
+										Throne Metal Model from Game of Thrones. Model measures 2.72" x 4.33" x
+										2.6".
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>14.95$</td>
+						<td>
+							<label for="quantity11">Add:</label>
+							<input type="number" id="quantity11" name="quantity" min="0" max="5">
+							<button class="add_to_cart_button"><i class="fa fa-cart-plus"></i></button>
+						</td>
+					</tr>
+					<tr>
+						<td class="flip-box">
+							<div class="flip-box-inner">
+								<div class="flip-box-front">
+									<img src="https://cdn.shopify.com/s/files/1/0533/5030/1859/products/gothoiornlan_22d640c7-6b18-4be1-be9b-f26458ab845e_1800x1800.jpg?v=1618158422"
+										class="shop_item_img" title="ornament" alt="ornamet">
+								</div>
+								<div class="flip-box-back">
+									<h2>Game of Thrones Lannister Ornament</h2>
+									<p>House Lannister Ornament. This beautiful red ornament features the House
+										Lannister sigil the lion.</p>
+								</div>
+							</div>
+						</td>
+						<td>8.95$</td>
+						<td>
+							<label for="quantity12">Add:</label>
+							<input type="number" id="quantity12" name="quantity" min="0" max="5">
+							<button class="add_to_cart_button"><i class="fa fa-cart-plus"></i></button>
+						</td>
+					</tr>
+			</table>
+		</main>
+		<br>
+		<a href="#heading">Click Me to get back to the shop</a>
+		<br>
+		<br>
+		<form action="https://cdn.dribbble.com/users/458522/screenshots/8244170/media/a2a392f3ccaa09f7ff0ece30c828248e.jpg?compress=1&resize=400x300">
+			<button id="complete_order_button">complete order &#9992;</button>
+		</form>
+		<!-- Of the record, I used section when I have headings in it and div when I have not.-->
+		<div id="coupon">
+			<img src="images/NedPhoto.jpg" class="shop_item_img" id="coupon_ned_photo" alt="framedPic">
+			<section id="coupon_discount"><h3>25% OFF YOUR PURCHASE </h3>
+				Available in sizes: 16"x20" and 20"x24". </section>
+			<div class="promo">Use Promo Code:BOH762</div>
+			<!-- I used span to color just part of the text -->
+			<span id="expire_red_color_font">
+				Expires: 30-01-21
+			</span>
+		</div>
+		<footer>
+			<!--navigate to different pages of the website-->
+			<nav class="navbar">
+				<a href="index.html"> Home Page </a>
+				<a href="seasons.html"> Seasons </a>
+				<a href="cast_and_crew.html"> Cast & Crew </a>
+				<a href="Shop.html"> Shop </a>
+				<a href="quiz.html"> Quiz </a>
+				<a href="Contact.html"> About </a>
+			</nav>
+			<!--Links to Social Media-->
+			<h3> Social Media </h3>
+			<a href="https://www.facebook.com/GameofThronesLAT" class="fa fa-facebook soical_media_icon"></a>
+			<a href="https://twitter.com/GameOfThrones" class="fa fa-twitter soical_media_icon"></a>	
+			<a href="https://www.youtube.com/user/GameofThrones" class="fa fa-youtube soical_media_icon"></a>
+			<br>
+			<br>
+		</footer>
+	</body>
+</html>

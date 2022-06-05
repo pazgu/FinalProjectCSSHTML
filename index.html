@@ -1,0 +1,122 @@
+<!-- Created by Steve Holof -->
+
+<!DOCTYPE html>
+<html lang="en"> 
+	<head>
+		<!-- Adding the page title and the "meta" tags -->
+		<title> Game of Thrones </title>
+		<link rel="stylesheet" href="Style.css">
+		<!-- the line below is a style for the social media and the rating section -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="utf-8"> 
+		<meta name="description" content="This website contains information about Game Of Thrones show"> 
+		<meta name="keywords" content="Game of Thrones, GoT, American Fantasy Drama, Westeros, HBO, Iron Throne, Seven Kingdoms">
+		<meta name="author" content="Paz Gueta">
+	</head>
+	<body> 
+		<!-- The "header" element includes the logo of "Game of Thrones" -->
+		<header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Logo_Game_of_Thrones.png" title="Game of Thrones Logo" alt="Game Of Thrones Logo" style="width:640px;height:150px;"> 
+		</header>
+		<!-- Adding the "nav" element in order to create a menu in our site, this menu will be the same for all of our pages -->
+		<nav class="navbar">
+			<a href="index.html"> Home Page </a> 
+			<a href="seasons.html"> Seasons </a> 
+			<a href="cast_and_crew.html"> Cast & Crew </a> 
+			<a href="Shop.html"> Shop </a> 
+			<a href="quiz.html"> Quiz </a> 
+			<a href="Contact.html"> About </a> 
+		</nav>
+		<br>
+		<!-- Adding the "main" element that includes mainly the content of the page with information about the show -->
+		<main>
+			<!--The iframe element adds the trailer video of the show from the Youtube-->
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/KPLWWIOCOOQ?color=white" title="Game of Thrones Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<h2> About the Show </h2>
+			<p class="p-homepage"> Game of Thrones is roughly based on the storylines of the "A Song of Ice and Fire" book series by George R. R. Martin, set in the fictional Seven Kingdoms of Westeros and the continent of Essos.
+				<br> The first story arc follows a war of succession among competing claimants for control of the Iron Throne of the Seven Kingdoms, with other noble families fighting for independence from the throne.
+				<br> The second concerns the exiled scion's actions to reclaim the throne, the third chronicles the threat of the impending winter, as well as the legendary creatures and fierce peoples of the North. 
+			</p>
+			<!-- Adding the soundtrack of Game of Thrones -->
+			<audio controls src="./audio/GoT_Music.mp3"></audio>
+			<h2> A Song of Ice and Fire - GoT Book </h2>
+			<p class="p-homepage"> A Song of Ice and Fire takes place on the fictional continents Westeros and Essos.
+				<br> The point of view of each chapter in the story is a limited perspective of a range of characters growing from nine in the first novel, to 31 characters by the fifth novel.
+				<br> Three main stories interweave: a dynastic war among several families for control of Westeros, the rising threat of the supernatural Others in northernmost Westeros, 
+				<br> and the ambition of the deposed king's exiled daughter to assume the Iron Throne.
+			</p>
+			<img src="https://live-cdn-www.nypl.org/s3fs-public/lesbooks_zps6c776c00.png" title="Game of Thrones Books" alt="GoT Books" style="width:640px;height:250px;">
+			<br>
+			<br>
+			<h2> House of the Dragons </h2>
+			<p class="p-homepage"> House of the Dragon is an upcoming American fantasy drama television series created by George R. R. Martin and Ryan J. Condal for HBO.
+				<br> It is a prequel to the television series Game of Thrones and is based on Martin's 2018 novel Fire & Blood. 
+				<br> The series is set two hundred years before the events of Game of Thrones and chronicles the beginning of the end of House Targaryen.
+				<br> The events leading up to the Targaryen civil war, known as the "Dance of the Dragons", and the war itself. 
+			</p>
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/fNwwt25mheo?color=white" title="House of the Dragons Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<br>
+			<br>
+			<h2> Game of Thrones Reviews and Ratings </h2>
+			<!-- This part adds stars to the page, I learned how to do it on w3schools (https://www.w3schools.com/howto/howto_css_star_rating.asp) -->
+			<span class="ratings"> Show Rating </span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>	
+			<br>
+			<br>
+			<!-- The part below adds reviews to the show, it is bulit as a list inside a section -->
+			<!-- Each "li" element of the list includes the design of the "boxed" class -->
+			<section>
+				<ol>
+					<li class="boxed">
+						<p class="p-homepage"> "The season premiere of “Game of Thrones” was thoroughly satisfying,
+							a transporting hour that brilliantly reestablished the chessboard for the new, penultimate season."
+						</p>
+					</li>
+					<li class="boxed">
+						<p class="p-homepage"> "There are very few shows that can deliver as much action and excitement
+						 as the season six Game of Thrones finale and there are perhaps even fewer shows that can make a table-setting episode this much fun, 
+						 so it's all the more bittersweet that not only is winter here, but the end is in sight."
+						</p>
+					</li>
+					<li class="boxed">
+						<p class="p-homepage"> "The show has stepped up its pacing. For the most part, that has been immensely satisfying, yielding crowd-pleasing
+							moments that the and that the series generally avoided in the often-grim journey,
+							 especially for the Stark kids, which has led to this point."
+						</p>
+					</li>
+					<li class="boxed">
+						<p class="p-homepage"> "Everything that was always good about Game of Thrones is still good.
+							The ensemble cast remains one of TV's richest, from top to bottom, and even actors who seemed weak in the past,
+							continue to rise to the level of much better material."
+						</p>
+					</li>
+				</ol>	
+			</section>
+			<br>
+			<br>
+		</main>
+		<!-- This part is the footer of the page which includes the navbar once again and the social media platforms-->
+		<footer>
+			<!--Nav to other pages in website-->
+			<nav class="navbar">
+				<a href="index.html"> Home Page </a> 
+				<a href="seasons.html"> Seasons </a> 
+				<a href="cast_and_crew.html"> Cast & Crew </a> 
+				<a href="Shop.html"> Shop </a> 
+				<a href="quiz.html"> Quiz </a> 
+				<a href="Contact.html"> About </a> 
+			</nav>
+			<!--Social Media Links-->
+			<p> Social Media </p>
+			<a href="https://www.facebook.com/GameofThronesLAT" class="fa fa-facebook soical_media_icon"></a>
+			<a href="https://twitter.com/GameOfThrones" class="fa fa-twitter soical_media_icon"></a>	
+			<a href="https://www.youtube.com/user/GameofThrones" class="fa fa-youtube soical_media_icon"></a>
+			<br>
+			<br>
+		</footer>
+	</body>
+</html>

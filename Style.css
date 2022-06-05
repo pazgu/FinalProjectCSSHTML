@@ -1,0 +1,481 @@
+/*-------------------------------------------------------------------------------------*/
+
+/*All the code below affects all pages Written by Steve Holof*/
+
+/*style for the body for all the pages of the website,
+In the body part we added the background to all of our pages.
+In addition, we centered the text and changed the font to "Segoe UI"
+*/
+
+body{
+    margin:0;
+    background-image: url('background.jpg');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color:whitesmoke;
+    text-align:center;
+    font-family:'Segoe UI';
+    overflow-x: hidden;
+}
+/*audio desgin*/
+audio
+{
+  border: solid 2px #3B5998;
+  border-radius: 50px;
+}
+/* This part adds an underline to all the h2 headings in our website */
+h2{
+  text-decoration: underline;
+}
+/*navber desgin*/
+.navbar {
+  width: 100%;  
+  padding: 15px;
+}
+/*navbar button  design*/
+.navbar a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 5px;
+  background-color: rgb(177, 172, 172);
+  color: #464141;
+  border-radius: 8px;
+}
+/*navbar button design, when we hover with mouse it changes the color*/
+.navbar a:hover {
+  background-color: #777777;
+  color: #ffffff;
+}
+/* style for the Social Media icons */
+.soical_media_icon {
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 5px 2px; 
+}
+/* style for the Social Media icon when hoverd */
+.soical_media_icon:hover {
+  opacity: 0.7;
+}
+/* Facebook icon design */
+.fa-facebook {
+  background-color: #3B5998;
+  color: white;
+}
+/* Twitter icon design */
+.fa-twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+/* YouTube icon design */
+.fa-youtube {
+  background-color: #bb0000;
+  color: white;
+}
+/*-------------------------------------------------------------------------------------*/
+/*Design for Home page
+Written by Steve Holof 
+*/
+
+/* This is the syle for the homepage paragraph, it should be with 1.5 spacing and padding from the bottom */
+.p-homepage {
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+/* This part adds the design and color for the stars ratings */
+.ratings {
+  font-size: 18px;
+  margin-right: 25px;
+  font-style: italic;
+}
+
+.checked {
+  color: orange;
+}
+
+/* The boxed class designs the reviews boxes in the bottom on the page 
+Displays the boxes with white borders side by side with italic font, a little bit circled and spaced*/ 
+.boxed {
+  border: 3px solid rgb(252, 252, 252);
+  width: 340px;
+  height: 150px;
+  display:inline-flex;
+  border-radius: 15px; 
+  margin: 7px;
+  font-size: 14px;
+  font-style: italic;
+  padding: 5px;
+}
+/*-------------------------------------------------------------------------------------*/
+/*Design for seasons page
+Written by Yotam Zeevi Federman 2021-12-15
+Modified by Yotam Zeevi Federman 2021-12-28
+*/
+
+/*Designing main and sections
+creating cards that are 60% width of screen and 80% height,
+centering the cards and designing border style,
+and creating glow effect with box shadow white
+*/
+.season{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 70vh;
+  margin: 50px auto;
+  border-radius: 10%;
+  border: 3px solid rgb(252, 252, 252);
+  box-shadow: 0 14px 18px 0 #fff;
+}
+/*h2 element - make black because default is whitesmoke*/
+.season h2{
+  margin-top: 2%;
+}
+/*adjust iframe to card: center by using margin and rounding borders*/
+.season iframe{
+  margin: auto;
+  width: 100%;
+  height: 60%;
+}
+.episodes_num{
+  margin: 5px;
+}
+.season p{
+  font-size: 16px;
+}
+/*-------------------------------------------------------------------------------------*/
+/*Design for cast and crew page
+Written by Sagee Kron 2021-12-15*/
+
+/*Designing main and sections,
+each section (character_card) includes image, character name, actor real name
+and info about the character wich is hideen and shown by hovering with the mouse.
+all the character_cards are inside a container (the main).
+the main is changing it's size acording to the size of the screen.
+*/
+/*cast and crew H1 style*/
+#cast_and_crew_main_heading{
+  margin-bottom: 30px;
+  text-decoration: underline;   
+}
+/*styling the character card whitch holds all the character info*/
+.character_card{
+  display: inline-block; /*seting the cards to display in the same line but react to block comands like width*/
+  padding: 0px; /*0 padding inside the card*/
+  width: 180px;    /*seting a width for each card*/
+  margin: 10px 10px;  /*seting  a distance of 10px for all the sides of the card*/
+}
+/*styling the images of the characters*/
+.character_img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+  }
+/*seting what happens to the photo when the user hovers on it with the mouse*/
+.character_card:hover .character_img {
+    border: #614d34 3px solid;
+    border-radius: 10%;
+    transition: all 0.8s;/*seting how much time it will take to change the style*/
+    transition-timing-function: ease-in;/*seting how it will make to change the animtion*/
+}
+/*not showing the about character*/
+.about_character{
+    display:none ; 
+}
+/*showing the about character*/
+.character_card:hover .about_character{
+    display: block;
+    /*The element will be positioned relative to were it supposed to show. wont ruin the page fllow*/
+    position: absolute;
+    width: 180px;
+    padding: 4px;
+    background-color:#614d34 ;
+    border-radius:5px ;
+    font-size: 17px;
+}
+  .actor_real_name{
+    margin-bottom: 3px;
+    font-size: 11px;
+}
+/*seting the cast_and_crew_main as a container */
+#cast_and_crew_main{
+    display: inline-block;
+    width: 1200px;
+    padding: 0px;
+}
+/*changing the mouse cursor when cast_and_crew_main is being hoverd*/
+.character_img:hover{ 
+  cursor:url('images/game-of-thrones-sword-cursor.png'), auto;
+}
+/*using the media query in order to make the cast_and_crew_main responsive.
+deciding how many cards get into the same line according to screen size. */
+@media only screen and (max-width: 1216px) {
+    #cast_and_crew_main{
+        width: 900px;
+    }
+  }
+  @media only screen and (max-width: 916px) {
+    #cast_and_crew_main{
+        width: 700px;
+    }
+  }
+  @media only screen and (max-width: 716px) {
+    #cast_and_crew_main{
+        width: 500px;
+    }
+  }
+
+/*-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+/*Design for quiz page
+Written by Paz */
+.quiz_img{
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  border:#614d34 2px solid ;
+}
+/* styling thr answers in the quiz page*/
+.answer {
+  display: inline-block;  /*it allows to set margins on the element*/
+  margin-bottom: 40px;
+}
+.answer img{
+  display: block; /*it adds a line break after the element, so that the images will be organized */
+}
+/*styling the questions in the quiz page */
+.question{
+  display: block;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+/*for the submit and send buttons */
+.Submit_quiz_answers{
+  display: block;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;  
+  background-color:#c1c079;
+  border-color:#666e8a ;
+}
+/*-------------------------------------------------------------------------------------*/
+/*Design for shop page
+Written by Paz */
+/*changing the image of an item when being hoverd */
+#tshirt_color:hover{ /*this is a picture for when the item is hoverd */
+  content: url("images/gray_shirt.png"); 
+}
+
+/*this is a picture for when the item is not hoverd */
+#tshirt_color :not(:hover){ 
+  content: url("images/black_shirt.png");
+}
+#winter_hat_color:hover
+{
+  content: url("images/red_winter_hat.png");
+}
+
+#winter_hat_color :not(:hover){
+  content: url("images/blue_winter_hat.png");
+}
+#jacket_color:hover
+{
+  content: url("images/white_jacket.png");
+}
+
+#jacket_color:not(:hover){
+  content: url("images/black_jacket.png");
+}
+#summer_hat_color:hover
+{
+  content: url("images/red_summer_hat.png");
+}
+
+#summer_hat_color:not(:hover){
+  content: url("images/black_summer_hat.png");
+}
+  
+a {
+  color: white;
+} 
+
+.shop_item_img { 
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+}
+caption {
+  font-size: 20px;
+  font-family: "Georgia", "Courier New";
+}  
+table{
+  /* The line below is for the colorful table. I used linear-gradient that creates an image with transition of 3 colors*/
+  background-image: linear-gradient(to right,#c1c079, #614d34,#666e8a);
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 18px;
+  /* For the table to be in the center */
+  margin-left: auto; 
+  margin-right: auto;
+  
+}
+tr,td{
+  border: black 1px solid;
+}
+
+/* the line below is a style for the social media and the add to cart section */
+.fa-cart-plus{
+  color:whitesmoke;
+
+}
+
+/*styling the button add to cart */
+.add_to_cart_button{
+  background-color: #4169E1;
+  font-size: 18px;
+  border-radius: 10%;
+}
+
+/*this is for the select labels */
+select {
+  border: 1px 1px 1px ;
+  padding: 10px;
+}
+
+/*This is for the select input*/
+.radio-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed; /*So that it will always stay in the same place even if the page is scrolled*/
+  width: 0;
+}
+
+/*This is for the select button*/
+.radio-toolbar label {
+  display: inline-block; /* It allow me to set a paddings to the element*/
+  background-color: #666e8a;
+  padding: 10px 20px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 2px solid #614d34;
+  border-radius: 4px;
+}
+
+/* It will indicate as checked on the costomer's select button and give the button differnet color*/
+.radio-toolbar input:checked + label{ 
+  background-color: #4169E1;
+  border:#c1c079 2.5px solid ;
+}
+  
+/*This one is flip box that flips the items in the second table*/
+  .flip-box { 
+    background-image: linear-gradient(to right,#c1c079, #614d34,#666e8a);
+    width: 300px;
+    height: 280px;
+    border-bottom: 1px solid black;
+  }
+  
+  /* This is needed for position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.2s; /* The transition maintion the time an item will take to flipp*/
+    transform-style: preserve-3d; /* This is for the child elemnt so it will be be positioned in 3D*/
+  }
+  
+  /* When the mouse will be hover the box it will flipp */
+  .flip-box:hover .flip-box-inner { /*I call the flip-box-inner so that flip-box:hover will work on it. */
+    transform: rotateY(180deg); /* This line is for turning the item to the opposite side */
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute; /*it will take the nearest positioned of the inherite class */
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /*It lets me choose you should not see the back face before rotating. */
+  }
+  
+  /* this one is for styling the front side */
+.flip-box-front {
+  background-color: #c1c079; 
+}
+  
+  /* this one is for styling the back side */
+.flip-box-back {
+  background-color: #4c5462;
+  color: white;
+  transform: rotateY(180deg);
+}
+  
+/*this is a coupon item */
+#coupon { 
+  border: 4px dotted #404152;
+  width: 40%;
+  border-radius: 15px;
+  max-width: 300px; 
+  background-color: #f1f1f1;
+  margin-top: 3px;
+}
+
+#coupon_ned_photo{
+  border: solid black 4px;
+}
+
+/* promo code for the coupon */
+.promo { 
+  background-color: black;
+  padding: 3px;
+}
+  
+/* expire date for the coupon */
+#expire_red_color_font { 
+  color: red;
+  text-transform: uppercase;
+}
+
+#coupon_discount
+{
+  color: black;
+  font-size: large;
+}
+
+#complete_order_button{
+    background-color: whitesmoke;
+    border: blanchedalmond 1px solid;
+    text-transform: uppercase; /* So that the text will be in uppercase letters.*/
+  }
+  /*-------------------------------------------------------------------------------------*/
+/*Design for contact page
+  Written by Steve Holof */
+  /* Styling the Cards of the Developers, creating borders, making it appear side by side, circled and spaced */
+.contact_info {
+  border: 3px solid rgb(252, 252, 252);
+  width: 260px;
+  height: 360px;
+  display:inline-block;
+  border-radius: 15px;  
+  margin: 7px;
+  padding: 5px 10px;
+  font-size: smaller;
+}
+
+/*styling the images of the Developers of the site */
+.about_pic {
+  position: relative;
+  width: 210px;
+  height: 230px;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+}
+.about_pic:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+
