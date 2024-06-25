@@ -48,6 +48,7 @@ h2{
   background-color: #777777;
   color: #ffffff;
 }
+
 /* style for the Social Media icons */
 .soical_media_icon {
   padding: 20px;
@@ -145,6 +146,20 @@ and creating glow effect with box shadow white
 }
 .season p{
   font-size: 16px;
+}
+
+.seasonsNavbar .season.active {
+  display: block;
+}
+
+.navbar li{
+text-decoration: none;
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 5px;
+  background-color: rgb(177, 172, 172);
+  color: #464141;
+  border-radius: 8px;
 }
 /*-------------------------------------------------------------------------------------*/
 /*Design for cast and crew page
